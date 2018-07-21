@@ -494,7 +494,7 @@ img {
 }
 
 .item-news::before {
-  background: url(../img/icon_ad.svg) no-repeat center center;
+  background: url(../img/icon_news.svg) no-repeat center center;
 }
 
 .item-escalator::before {
