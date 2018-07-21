@@ -493,7 +493,7 @@ img {
   background: url(../img/icon_food.svg) no-repeat center center;
 }
 
-.item-ad::before {
+.item-news::before {
   background: url(../img/icon_ad.svg) no-repeat center center;
 }
 
