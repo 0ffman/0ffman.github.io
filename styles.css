@@ -48,7 +48,7 @@ a {
 }
 
 .container {
-	width: 1000px;
+	width: 1140px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -61,21 +61,20 @@ a {
 	text-align: center;
 }
 
-.main-list {
+.work-list {
+	margin: 0 -15px;
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	-ms-align-self: flex-start;
-	align-self: flex-start;
-	padding-left: 95px;
 	list-style: none;
 }
-
-.list-item {
-	width: 200px;
+.work-item {
+	width: calc(33% - 30px);
+	margin: 0 15px 30px 15px;
 }
 
-.list-item a:hover {
-	text-decoration: none;
-	background-color: #0366d6;
-	color: #fff;
+.work-item img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
