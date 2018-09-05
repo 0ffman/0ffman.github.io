@@ -5,11 +5,29 @@ body {
 	background-color: #eee;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
 	padding: 20px;
 	color: #fff;
 	background-color: #3d4252;
 }
+
 .header-wrapper {
 	width: 1140px;
 	margin: 0 auto;
@@ -23,7 +41,6 @@ a {
 	font-weight: bold;
 	color: #0366d6;
 }
-
 
 .header-logo {
 	border-radius: 100%;
@@ -45,6 +62,7 @@ a {
 	padding-left: 26px;
 	margin-right: 10px;
 }
+
 .links-item::before {
 	width: 24px;
 	height: 24px;
@@ -58,12 +76,15 @@ a {
 .links-item-phone::before {
 	background-image: url(img/phone.svg);
 }
+
 .links-item-github::before {
 	background-image: url(img/github.svg);
 }
+
 .links-item-gmail::before {
 	background-image: url(img/gmail.svg);
 }
+
 .links-item-resume::before {
 	background-image: url(img/profile.svg);
 }
@@ -99,6 +120,7 @@ a {
 	flex-wrap: wrap;
 	list-style: none;
 }
+
 .work-item {
 	position: relative;
 	width: calc(33% - 30px);
@@ -154,6 +176,7 @@ a {
 	transition: 0.5s;
 	text-decoration: none;
 }
+
 .open-link:hover {
 	background-color: #fff;
 	color: #0366d6;
@@ -166,3 +189,33 @@ a {
 	font-size: 20px;
 	font-weight: 700;
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-wrapper {
+  	width: auto;
+  	flex-direction: column;
+  }
+  .header-heading {
+  	margin: 15px 0;
+  }
+  .contacts-links {
+	margin: 0;
+  	flex-direction: column;
+  }
+  .links-item {
+  	margin-bottom: 5px;
+  }
+  .paragraph {
+  	font-size: 21px;
+  }
+  .work-list {
+  	flex-direction: column;
+  }
+  .work-item {
+  	width: auto;
+  }
